@@ -30,7 +30,7 @@ class LiveRelay:
             if self.task_queue.full():
                 task = await self.task_queue.get()
                 task_obj = task['task_obj']
-                if task_obj.done() or self.index < task['index']:
+                if task_obj.done() or (self.index < task['index'] and await self.run()):
                     task_obj.cancel()
                     try:
                         await task_obj
