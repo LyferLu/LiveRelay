@@ -1,0 +1,17 @@
+{
+    "RTMPServer": "rtmps://localhost:1935/live",
+    "streams": [
+        {
+            "index": 0,
+            "name": "stream1",
+            "platform": "twitch",
+            "id": "luoshushu0"
+        },
+        {
+            "index": 1,
+            "name": "stream2",
+            "platform": "youtube",
+            "id": "UC7QVieoTCNwwW84G0bddXpA"
+        }
+    ]
+}
